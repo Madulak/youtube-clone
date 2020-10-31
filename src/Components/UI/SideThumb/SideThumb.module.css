@@ -1,0 +1,27 @@
+.SideThumb {
+    display: flex;
+    margin: 1rem 0;
+}
+
+.SideThumb .Image {
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+    
+}
+
+.SideThumb div {
+    margin-left: 10px;
+}
+
+.SideThumb .Link {
+    text-decoration: none;
+}
+
+.SideThumb p {
+    color: black;
+}
+
+.SideThumb span {
+    color: grey;
+}

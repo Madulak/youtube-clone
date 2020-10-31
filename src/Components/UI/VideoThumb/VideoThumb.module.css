@@ -1,0 +1,51 @@
+.VideoThumb {
+    /* position: relative; */
+    margin: 10px;
+    width: 240px;
+}
+
+.VideoThumb .Image {
+    width: 240px;
+    height: 140px;
+    object-fit: cover;
+    
+}
+
+/* .VideoThumb:hover {
+    cursor: pointer;
+} */
+
+.VideoThumb .TitleContainer {
+    display: flex;
+    align-items: center;
+}
+
+.VideoThumb .TitleContainer p {
+    margin-left: 10px;
+    text-decoration: none;
+    
+}
+
+.VideoThumb .Title {
+    text-decoration: none;
+    color: black;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.VideoThumb .Link {
+    text-decoration: none;
+}
+
+.VideoThumb .ChannelName {
+    color: gray
+}
+
+.VideoThumb span {
+    color: gray;
+}
+
+.VideoThumb .VideoInfo {
+    margin-left: 3rem;
+}

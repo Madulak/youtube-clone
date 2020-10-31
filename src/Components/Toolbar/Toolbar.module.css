@@ -1,0 +1,53 @@
+.Toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    height: 3rem;
+    position: fixed;
+    top: 0;
+    width: 96%;
+    z-index: 2;
+    padding: 0 2rem;
+}
+
+.Toolbar .YoutubeLogoContainer {
+    display: flex;
+    align-items: center;
+}
+
+.Toolbar .YoutubeLogoContainer .YoutubeLogo {
+    display: flex;
+    align-items: center;
+}
+
+
+.Toolbar  .Search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid lightgray;
+    /* border-radius: 5px; */
+    width: 30%;
+}
+
+.Toolbar  .Search input {
+    border: 0;
+    width: fit-content;
+    padding-left: 10px;
+}
+
+.Toolbar  .Search .Button {
+    background-color: lightgray;
+    font-size: 24px;
+    border-radius: 0;
+    position: relative;
+    height: 100%;
+    float: right;
+}
+
+
+.Toolbar .IconsContainer {
+    display: flex;
+    align-items: center;
+}

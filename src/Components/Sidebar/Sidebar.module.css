@@ -1,0 +1,17 @@
+.Sidebar {
+    flex: 1;
+    position: fixed;
+    height: 100%;
+    overflow-y: scroll;
+    /* width: ; */
+    width: 15%;
+}
+
+.Sidebar .Border {
+    border-bottom: lightgray solid 1px;
+}
+
+.Sidebar h3 {
+    color: rgb(85, 85, 85);
+    margin: 10px;
+}

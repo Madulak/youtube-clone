@@ -1,0 +1,35 @@
+.Container {
+    height: 93vh;
+    /* background-color: rgb(245, 245, 245); */
+}
+
+.Container .Toolbar {
+    /* position: fixed; */
+    width: 100%;
+}
+
+.Drawer {
+    width: 10rem;
+    background-color: red;
+    height: 100vh;
+}
+
+.Container .Content {
+    display: flex;
+    margin-top: 3rem;
+}
+
+.Container .Sidebar {
+    flex: 0.15;
+    height: 93vh;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.Container .Body {
+    flex: 0.85;
+    background-color: rgb(245, 245, 245);
+    /* min-height: 90vh; */
+    
+}

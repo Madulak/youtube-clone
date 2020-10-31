@@ -1,0 +1,8 @@
+.Comment {
+    display: flex;
+    margin: 1rem 0;
+}
+
+.Comment div {
+    margin-left: 10px;
+}
