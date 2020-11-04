@@ -1,7 +1,7 @@
 import { AUTH, PROGRESS } from "./actions";
 
 const initialState = {
-    user: {},
+    user: null,
     progress: 0,
 }
 

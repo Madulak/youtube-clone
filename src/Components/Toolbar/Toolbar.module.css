@@ -16,9 +16,18 @@
     align-items: center;
 }
 
+.Toolbar .YoutubeLogoContainer h3 {
+    color: black;
+}
+
+.Toolbar .YoutubeLogoContainer .YoutubeColor {
+    color: red;
+}
+
 .Toolbar .YoutubeLogoContainer .YoutubeLogo {
     display: flex;
     align-items: center;
+    margin-left: 10px;
 }
 
 
@@ -50,4 +59,46 @@
 .Toolbar .IconsContainer {
     display: flex;
     align-items: center;
+}
+
+@media only screen and (max-width: 800px) {
+    .Toolbar .IconsContainer .Notification {
+        display: none;
+    }
+
+    .Toolbar .IconsContainer .Apps {
+        display: none;
+    }
+
+    .Toolbar .Search {
+        border: 0;
+        width: auto;
+    }
+
+    .Toolbar  .Search input {
+        display: none;
+    }
+
+    .Toolbar  .Search .Button {
+        background-color: white;
+    }
+
+    .Toolbar .MenuIcon {
+        display: none;
+    }
+
+    
+}
+
+@media only screen and (max-width: 480px) {
+    .Toolbar .YoutubeLogoContainer .YoutubeLogo {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .Toolbar .MenuIconDrawer {
+        display: none;
+    }
+    
 }

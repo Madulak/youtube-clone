@@ -1,0 +1,17 @@
+.SidebarWidget {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    padding-left: 20px;
+    /* width: 100%; */
+}
+
+.SidebarWidget span {
+    margin-left: 20px;
+}
+
+.SidebarWidget:hover {
+    background-color: lightgrey;
+    cursor: pointer;
+}

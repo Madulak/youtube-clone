@@ -4,6 +4,8 @@
     align-items: center;
     padding: 10px;
     padding-left: 20px;
+    color: rgb(61, 61, 61);
+    text-decoration: none;
     /* width: 100%; */
 }
 
@@ -14,4 +16,26 @@
 .SidebarWidget:hover {
     background-color: lightgrey;
     cursor: pointer;
+}
+
+.SidebarWidget .Link {
+    color: rgb(61, 61, 61);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1100px) {
+    .SidebarWidget {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .SidebarWidget span {
+        /* display: none; */
+        font-size: 10px;
+        text-align: center;
+        margin: auto;
+    }
 }

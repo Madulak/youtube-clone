@@ -17,3 +17,12 @@
 .Upload .UploadBody input {
     margin: .5rem 0;
 }
+
+.Upload label {
+    font-size: 10px;
+    color: grey;
+}
+
+.Upload * {
+    color: rgb(59, 59, 59);
+}

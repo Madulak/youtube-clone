@@ -1,7 +1,6 @@
 import React from 'react';
 import classes from './VideoThumb.module.css';
 
-import pic from './526290.jpg';
 import { Avatar, Tooltip } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 
@@ -11,7 +10,7 @@ const VideoThumb = ({channel_name, photo_url, title, thumbnail, video_url, id, v
         
         <div className={classes.VideoThumb}>
            <Link className={classes.Link} to={{pathname: '/video/'+id, video_url: video_url}}>
-                <img className={classes.Image} src={thumbnail} />
+                <img className={classes.Image} src={thumbnail} alt={title} />
                 <div className={classes.TitleContainer}>
                     <Avatar src={photo_url} />
                     <Tooltip title={title}>

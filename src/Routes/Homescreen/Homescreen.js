@@ -3,6 +3,7 @@ import classes from './Homescreen.module.css';
 import Container from '../../Container/Container';
 
 import VideoThumb from '../../Components/UI/VideoThumb/VideoThumb';
+import Educational from '../../Components/Educational/Educational';
 
 import db from '../../firebase';
 
@@ -29,7 +30,7 @@ const Homescreen = () => {
     return (
         <Container>
             <div className={classes.Homescreen}>
-                
+                <Educational />
                 {videos && 
                     videos.map(vid => (
                         <VideoThumb 

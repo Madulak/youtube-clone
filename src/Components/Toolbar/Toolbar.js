@@ -7,26 +7,28 @@ import SearchIcon from '@material-ui/icons/Search';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import VideoCallIcon from '@material-ui/icons/VideoCall';
 import AppsIcon from '@material-ui/icons/Apps';
-import { Avatar, Button, IconButton } from '@material-ui/core';
+import { Avatar, Button, IconButton, Tooltip } from '@material-ui/core';
 
 import { NavLink } from 'react-router-dom';
 
 import { useSelector } from 'react-redux';
 
-const Toolbar = () => {
+const Toolbar = ({drawer}) => {
 
     const userphoto = useSelector(state => state.data.user.photoURL);
+    const username = useSelector(state => state.data.user.displayName);
     console.log(userphoto)
 
     return (
         <div className={classes.Toolbar}>
             <div className={classes.YoutubeLogoContainer}>
-                <MenuIcon />
+                <MenuIcon className={classes.MenuIcon} />
+                <MenuIcon onClick={() => drawer()} className={classes.MenuIconDrawer} />
                 <div className={classes.YoutubeLogo}>
                     <NavLink to='/'>
-                        <YouTubeIcon />
+                        <YouTubeIcon className={classes.YoutubeColor} />
                     </NavLink>
-                    <NavLink to='/'>
+                    <NavLink style={{textDecoration: 'none'}} to='/'>
                         <h3>Youtube </h3>
                     </NavLink>
                 </div>
@@ -41,21 +43,25 @@ const Toolbar = () => {
 
             <div className={classes.IconsContainer}>
                 <IconButton style={{color: 'black'}}>
-                    <NavLink to='/upload'>
-                        <VideoCallIcon />
-                    </NavLink>
+                    <Tooltip title='Upload Video'>
+                        <NavLink to='/upload'>
+                            <VideoCallIcon />
+                        </NavLink>
+                    </Tooltip>
                 </IconButton>
 
-                <IconButton style={{color: 'black'}}>
+                <IconButton className={classes.Apps} style={{color: 'black'}}>
                     <AppsIcon />
                 </IconButton>
                 
-                <IconButton style={{color: 'black'}}>
+                <IconButton className={classes.Notification} style={{color: 'black'}}>
                     <NotificationsIcon />
                 </IconButton>
                 
                 <IconButton>
-                    <Avatar src={userphoto ? userphoto : ''} alt='User' />
+                    <Tooltip title={username && username}>
+                        <Avatar src={userphoto ? userphoto : ''} alt='User' />
+                    </Tooltip>
                 </IconButton>
                 
             </div>

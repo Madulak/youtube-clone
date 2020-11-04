@@ -1,0 +1,19 @@
+.Educational {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    background-color: black;
+    width: 100%;
+    height: 5rem;
+}
+
+.Educational h3 {
+    color: white;
+}
+
+/* @media only screen and (max-width : 800px ) {
+    .Educational {
+        display: none;
+    }
+} */

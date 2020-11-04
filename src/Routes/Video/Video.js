@@ -7,13 +7,13 @@ import Container from '../../Container/Container';
 import SideThumb from '../../Components/UI/SideThumb/SideThumb';
 
 import ThumbUpIcon from '@material-ui/icons/ThumbUp';
-import ThumbUpAltIcon from '@material-ui/icons/ThumbUpAlt';
-import SaveAltIcon from '@material-ui/icons/SaveAlt';
+// import ThumbUpAltIcon from '@material-ui/icons/ThumbUpAlt';
+// import SaveAltIcon from '@material-ui/icons/SaveAlt';
 import { Notifications, ThumbDown } from '@material-ui/icons';
 import { Avatar, Button } from '@material-ui/core';
 
 import { useParams } from 'react-router-dom';
-import ReactPlayer from 'react-player'
+// import ReactPlayer from 'react-player'
 
 import { useDispatch } from 'react-redux';
 import * as commentAction from '../../store/actions';

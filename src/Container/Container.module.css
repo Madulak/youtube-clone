@@ -9,10 +9,18 @@
 }
 
 .Drawer {
-    width: 10rem;
-    background-color: red;
+    width: 15rem;
+    /* background-color: red; */
     height: 100vh;
 }
+
+.Container  .YoutubeLogo {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    background-color: red;
+}
+
 
 .Container .Content {
     display: flex;
@@ -32,4 +40,35 @@
     background-color: rgb(245, 245, 245);
     /* min-height: 90vh; */
     
+}
+
+@media only screen and (max-width: 1100px) {
+    .Container .Sidebar {
+        flex: 0.10;
+        height: 93vh;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+    }
+    
+    .Container .Body {
+        flex: 0.90;
+        background-color: rgb(245, 245, 245);
+        /* min-height: 90vh; */
+        
+    }
+}
+
+
+@media only screen and (max-width: 800px) {
+    .Container .Sidebar {
+       display: none;
+    }
+    
+    .Container .Body {
+        flex: 1;
+        background-color: rgb(245, 245, 245);
+        min-height: 93vh;
+        
+    }
 }

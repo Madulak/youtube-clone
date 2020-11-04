@@ -7,7 +7,7 @@ const SideThumb = ({channel_name, views, title, thumbnail, video_url, id}) => {
     return (
         <div className={classes.SideThumb}>
             <NavLink className={classes.Link}  to={{pathname: '/video/'+id, video_url: video_url}}>
-                <img className={classes.Image} src={thumbnail} />
+                <img className={classes.Image} src={thumbnail} alt={title} />
             </NavLink>
             <div>
                 <NavLink className={classes.Link}  to={{pathname: '/video/'+id, video_url: video_url}}>

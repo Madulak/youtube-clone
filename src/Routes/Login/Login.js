@@ -17,7 +17,7 @@ const Login = () => {
     return (
         <div className={classes.Login}>
             <div className={classes.LoginBody}>
-                <img src={logo} />
+                <img src={logo} alt={'login logo'} />
                 <h3>Sign in to Youtube Clone</h3>
                 <Button className={classes.Button} onClick={loginHandler}>Sign in With Google</Button>
             </div>

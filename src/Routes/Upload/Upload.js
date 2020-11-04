@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import classes from './Upload.module.css';
 
 import Container from '../../Container/Container';
-import { Button } from '@material-ui/core';
 
 import { useDispatch, useSelector } from 'react-redux';
 import * as uploadAction from '../../store/actions';
